@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:turismo_transparente/features/tourism/presentation/tourism_screen.dart';
 
 void main() {
   runApp(const ProviderScope(child: TurismoTransparenteApp()));
@@ -18,9 +19,7 @@ class TurismoTransparenteApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      home: Scaffold(
-        body: const Center(child: Text('Arquitectura Base Configurada')),
-      ),
+      home: TourismScreen(),
     );
   }
 }
